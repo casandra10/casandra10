@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Responsive Survey Form Website</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+               CITCS Department Survey Form
+            </h1>
+            <p id="description">
+               University of the Cordilleras
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"
+class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="age" name="age" id="age"                   
+class="formControl" placeholder="Enter your Age"
+                required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone"
+                       class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue"> </span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Which do you prefer using a software/ html in this subject/course?</p>
+                <select name="software" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select a Software</option>
+                    <option value="netbeans">NetBeans</option>
+                    <option value="programiz">Programiz</option>
+                    <option value="webstorm">Webstorm</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest">Do you prefer Face to Face Classes ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="Agree"
+                    class="inputRadio"
+                    checked> Agree
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Strongly-Agree"
+                    class="inputRadio"
+                    >Strongly Agree
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="Disagree"
+                    class="inputRadio"
+                    > Disagree
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="strongly-disagree"
+                    class="inputRadio"
+                    > Strongly-Disagree
+                </label>
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">Which job will you want to apply after finishing schooling as BSIT college student? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Software Developer/Engineer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Network Administrator
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  IT Project Manager
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Cybersecurity Analyst
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Give us your comments/suggestions</p>
+                <textarea name="feedback"  cols="30" rows="10"  id="feedback" class="textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
